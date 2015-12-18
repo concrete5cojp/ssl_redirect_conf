@@ -6,6 +6,7 @@ Redirect users to https URL with simple rules configuration on your concrete5 si
 
 ```
 /login
+/login/*
 /dashboard
 /dashboard/*
 /contact
