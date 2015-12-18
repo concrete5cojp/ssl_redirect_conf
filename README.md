@@ -9,4 +9,5 @@ Redirect users to https URL with simple rules configuration on your concrete5 si
 /dashboard
 /dashboard/*
 /contact
+/contact/*
 ```
