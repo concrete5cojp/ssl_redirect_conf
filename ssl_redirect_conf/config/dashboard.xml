@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <singlepages>
+        <page name="SSL Redirection" path="/dashboard/system/environment/https_config" filename="/dashboard/system/environment/https_config.php" pagetype="" description="" package="ssl_redirect_conf" />
+    </singlepages>
+</concrete5-cif>
