@@ -39,19 +39,19 @@ class Controller extends \Concrete\Core\Package\Package
             $url = Url::createFromUrl($request->getUri());
             $isSSL = false;
 
-            $userMatcher = new UserRequestMatcher();
-            if ($userMatcher->matches($request)) {
-                $isSSL = true;
-            }
-            if (!$userMatcher->matches($request)) {
-                $isSSL = false;
-            }
-
             $pathMatcher = new PathRequestMatcher();
             if ($pathMatcher->matches($request)) {
                 $isSSL = true;
             }
             if (!$pathMatcher->matches($request)) {
+                $isSSL = false;
+            }
+
+            $userMatcher = new UserRequestMatcher();
+            if ($userMatcher->matches($request)) {
+                $isSSL = true;
+            }
+            if (!$userMatcher->matches($request) && $isSSL === false) {
                 $isSSL = false;
             }
 
