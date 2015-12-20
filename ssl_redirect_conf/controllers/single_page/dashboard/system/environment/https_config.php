@@ -23,10 +23,12 @@ class HttpsConfig extends \Concrete\Core\Page\Controller\DashboardPageController
                 $pkg = Package::getByHandle('ssl_redirect_conf');
                 $pkg->getFileConfig()->save('https.signin', $this->post('signin'));
                 $paths = explode(PHP_EOL, $this->post('paths'));
-                foreach ($paths as $i => $path) {
-                    $paths[$i] = trim($path);
+                if (is_array($paths)) {
+                    foreach ($paths as $i => $path) {
+                        $paths[$i] = trim($path);
+                    }
+                    $pkg->getFileConfig()->save('https.paths', $paths);
                 }
-                $pkg->getFileConfig()->save('https.paths', $paths);
                 $this->redirect('/dashboard/system/environment/https_config', 'config_saved');
             }
         } else {

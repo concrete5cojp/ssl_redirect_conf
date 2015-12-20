@@ -17,9 +17,11 @@ class PathRequestMatcher implements RequestMatcherInterface
         $pkg = Package::getByHandle('ssl_redirect_conf');
         $paths = $pkg->getFileConfig()->get('https.paths');
         
-        foreach ($paths as $path) {
-            if ($request->matches($path)) {
-                return true;
+        if (is_array($paths)) {
+            foreach ($paths as $path) {
+                if ($request->matches($path)) {
+                    return true;
+                }
             }
         }
 
