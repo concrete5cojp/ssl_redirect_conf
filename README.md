@@ -31,14 +31,3 @@ If you would like to set all page in SSL, simply enter
 
 Then, your entire concrete5 site will be redirected to SSL.
 
-
-## In case of emergency
-
-If you happened to make some mistake, you can disable SSL Redirect Conf by setting in `\application\config\concrete.php`
-
-```
-    'seo'               => array(
-        'ssl_redirect_conf'           => false,
-    ),
-
-```
