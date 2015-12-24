@@ -33,19 +33,21 @@ Then, your entire concrete5 site will be redirected to SSL.
 
 ## Configuration File
 
-When you set up the URL rule from Dashboard, concrete5 will generate the following config file
+When you set up the URL rules from Dashboard, concrete5 will generate the following config file
 
 `/application/config/generated_overrides/ssl_redirect_conf/https.php`
 
-OR you could easily override the setting at
+OR you could easily override the setting by creating the following PHP file. **By creating the following file, you will not be able to change any setting from the dashboard.**
 
 `/application/config/ssl_redirect_conf/https.php`
 
-### Configuration file format
+
+
+### PHP Configuration File Format
 
 This is the example of configuration file.
 
-If you made some mistake on your server, and you wanted to disable the SSL Redirect, simply change the `signin` to `0`.
+If you made some mistake on your server, and you wanted to disable the SSL Redirect, simply change the `signin` from `1` to `0`.
 
 
 ```
