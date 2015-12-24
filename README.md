@@ -8,7 +8,7 @@ Redirect users to https URL with simple rules configuration on your concrete5 si
 1. Login as administrator
 1. Go to `Dashboard` - `Extend concrete5`
 1. Click `Install` SSL Redirect Configuration
-1. Go to `Dashboard` - `System and Settings` - `Environment`
+1. Go to `Dashboard` - `System and Settings` - `Environment` - `SSL Redirection`
 1. Enter the URL rule how you want to enable SSL direct for
 1. Click save
 
