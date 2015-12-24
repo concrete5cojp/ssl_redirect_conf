@@ -10,9 +10,12 @@ class HttpsConfig extends \Concrete\Core\Page\Controller\DashboardPageController
         $pkg = Package::getByHandle('ssl_redirect_conf');
         $signin = $pkg->getFileConfig()->get('https.signin');
         $paths = $pkg->getFileConfig()->get('https.paths');
+        if ($paths) {
+            $paths = implode("\n", $paths);
+        }
 
         $this->set('signin', $signin);
-        $this->set('paths', implode("\n", $paths));
+        $this->set('paths', $paths);
         $this->set('pageTitle', t('SSL Redirect Configuration'));
     }
     
