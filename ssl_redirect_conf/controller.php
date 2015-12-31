@@ -1,6 +1,7 @@
 <?php
 namespace Concrete\Package\SslRedirectConf;
 
+use Config;
 use Events;
 use Concrete\Core\Backup\ContentImporter;
 use Concrete\Core\Routing\RedirectResponse;
@@ -56,9 +57,19 @@ class Controller extends \Concrete\Core\Package\Package
             }
 
             if ($isSSL === true && $request->getScheme() == 'http') {
+                $config_canonical_ssl_url = Config::get('concrete.seo.canonical_ssl_url');
+                if (strlen($config_canonical_ssl_url)) {
+                    $canonical_ssl_url = Url::createFromUrl($config_canonical_ssl_url);
+                    $url->setHost($canonical_ssl_url->getHost());
+                }
                 $url->setScheme('https');
                 $response = new RedirectResponse($url);
             } elseif ($isSSL === false && $request->getScheme() == 'https') {
+                $config_canonical_url = Config::get('concrete.seo.canonical_url');
+                if (strlen($config_canonical_url)) {
+                    $canonical_url = Url::createFromUrl($config_canonical_url);
+                    $url->setHost($canonical_url->getHost());
+                }
                 $url->setScheme('http');
                 $response = new RedirectResponse($url);
             }
