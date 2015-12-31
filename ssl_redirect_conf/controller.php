@@ -12,8 +12,8 @@ use Concrete\Package\SslRedirectConf\Http\PathRequestMatcher;
 class Controller extends \Concrete\Core\Package\Package
 {
     protected $pkgHandle = 'ssl_redirect_conf';
-    protected $appVersionRequired = '5.7.5';
-    protected $pkgVersion = '0.1';
+    protected $appVersionRequired = '5.7.5.4';
+    protected $pkgVersion = '0.9';
     protected $pkgAutoloaderMapCoreExtensions = true;
 
     public function getPackageName()
