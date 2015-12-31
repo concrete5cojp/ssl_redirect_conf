@@ -79,3 +79,7 @@ return array(
 - @hissy (lead)
 - @katzueno (English documentation)
 - @pictron (debug)
+
+## License
+
+MIT
