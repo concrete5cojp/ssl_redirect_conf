@@ -1,6 +1,6 @@
 # Add-on SSL Redirect Configuration
 
-Redirect users to https URL with simple rules configuration on your concrete5 site.
+Redirect users to https URL with simple rules configuration on your concrete5 site. You must have the same host name for both http and https access.
 
 ## Instruction
 
@@ -47,7 +47,7 @@ OR you could easily override the setting by creating the following PHP file. **B
 
 This is the example of configuration file.
 
-If you made some mistake on your server, and you wanted to disable the SSL Redirect, simply change the `signin` from `1` to `0`.
+If you made some mistake on your server, and you wanted to disable the SSL Redirect, simply change the `signin` from `1` to `0` and delete all the URL rules on the configuration file.
 
 
 ```
@@ -73,6 +73,24 @@ return array(
 );
 
 ```
+
+### Common Mistake
+
+If you have a specific page that you want to enable SSL, make sure to add the wild card to that URL.
+
+For example, if you want to enable the SSL redirect to the following concrete5 page,
+
+`http://example.com/contact/form/`
+
+Make sure to add the following **2 paths** to the configuration.
+
+```
+/contact/form
+/contact/form/*
+```
+
+
+
 
 ## Credits
 
