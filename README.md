@@ -1,6 +1,6 @@
 # Add-on SSL Redirect Configuration
 
-Redirect users to https URL with simple rules configuration on your concrete5 site.
+Redirect users to https URL with simple rules configuration on your concrete5 site. You must have the same host name for both http and https access.
 
 ## Instruction
 
