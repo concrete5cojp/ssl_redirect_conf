@@ -24,7 +24,7 @@
         </div>
     </fieldset>
     <div class="alert alert-warning" role="alert">
-        <?php echo t('NOTE: Make sure to point both http and https directory to the same directory. If you configured the different directories for http and https, you may become impossible to login to dashboard. If you become unable to log-in, edit the configuration file saved on the server directly.') ?>
+        <?php echo t('NOTE: Make sure have the same domain and host name for both http and https. If you configured the different host name for http and https, you may become impossible to login to dashboard. If you become unable to log-in, edit the configuration file saved on the server directly.') ?>
     </div>
     <div class="panel panel-default">
         <div class="panel-heading"><?php echo t('About Configuration File') ?></div>
