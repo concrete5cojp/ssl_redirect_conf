@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SSL Redirect Configuration 0.9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-16 17:48+0900\n"
+"PO-Revision-Date: 2016-08-16 17:54+0900\n"
+"Last-Translator: Takuro Hishikawa <hishikawa@concrete5.co.jp>\n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: t;t2:1,2;tc:1c,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../controller.php:21 ../../../controllers/single_page/dashboard/system/environment/https_config.php:19
+msgid "SSL Redirect Configuration"
+msgstr "SSLリダイレクト設定"
+
+#: ../../../controller.php:26
+msgid "Redirect users to https URL with simple rules configuration."
+msgstr "シンプルなルールによる設定でユーザーをHTTPSのURLにリダイレクトします。"
+
+#: ../../../controllers/single_page/dashboard/system/environment/https_config.php:44
+msgid "SSL configuration saved."
+msgstr "SSL設定を保存しました。"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:7
+msgid "Enable SSL Redirect for registered users"
+msgstr "登録されたユーザーにSSLリダイレクトを有効"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:11
+msgid "Redirect all pages to https after log-in."
+msgstr "ログイン後にすべてのページでHTTPSにリダイレクトします。"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:16
+msgid "URL Rules"
+msgstr "URLルール"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:17
+msgid "The following rule will be effective for all site visitors."
+msgstr "次のルールはすべてのサイトの訪問者に適用されます。"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:19
+msgid "Paths"
+msgstr ""
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:22
+msgid "Enter URL path one per line. You can use wildcard character (*)."
+msgstr "URLパスを行ごとに入力してください。ワイルドカード文字 (*) も使えます。"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:23
+msgid "Once you saved the path, it starts to redirect immediately."
+msgstr "パスを保存するとリダイレクトはすぐに適用されます。"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:27
+msgid ""
+"NOTE: Make sure have the same domain and host name for both http and https. If you configured the different host "
+"name for http and https, you may become impossible to login to dashboard. If you become unable to log-in, edit the "
+"configuration file saved on the server directly."
+msgstr ""
+"注意：HTTPとHTTPSで同じドメイン、同じホスト名に設定してください。HTTPとHTTPSで違うホスト名に設定している場合、管理画"
+"面にログインできなくなります。もしログインできなくなった場合、サーバーディレクトリに保存された設定ファイルを編集して"
+"ください。"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:30
+msgid "About Configuration File"
+msgstr "設定ファイルについて"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:32
+msgid "When you save the configuration from this page, concrete5 will generate the following config file"
+msgstr "このページから設定を保存すると、concrete5は次の設定ファイルを生成します"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:34
+msgid ""
+"OR you could easily override the setting by creating the following PHP file. By creating the following file, you "
+"will not be able to change any setting from this page."
+msgstr ""
+"または、次のPHPファイルを作成することで、設定を上書きすることができます。次のファイルを作成すると、このページから設定"
+"変更ができなくなります。"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:39
+msgid "Common Mistake"
+msgstr "よくある間違い"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:41
+msgid ""
+"If you have a specific page that you want to enable SSL, make sure to add the wild card to that URL. <br />\n"
+"<br />\n"
+"For example, if you want to enable the SSL redirect to the following concrete5 page,\n"
+msgstr ""
+"特定のページでSSLを有効にしたい場合、URLにワイルドカードを追加してください。<br />\n"
+"<br />\n"
+"例えば、次のconcrete5ページでSSLリダイレクトを有効にしたい場合、\n"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:46
+msgid "Make sure to add the following <strong>2 paths</strong> to the configuration."
+msgstr "次の<strong>２つのパス</strong>を設定に加えてください。"
+
+#: ../../../single_pages/dashboard/system/environment/https_config.php:54
+msgid "Save"
+msgstr ""
+
+# Don't change this, please use same words with concrete5 core translation. see www.transifex.com/projects/p/concrete5/
+#~ msgid "Access Denied."
+#~ msgstr "アクセス拒否"
